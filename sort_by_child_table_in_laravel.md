@@ -4,3 +4,8 @@ Parent::with('child')
     ->orderBy('sort')
     ->get(); 
 ```
+another way
+
+```PHP
+Model::with('relation')->get()->sortBy('relation.field_name');
+```
