@@ -1,0 +1,17 @@
+# Search as sql 'LIKE' statement into json using underscore.js
+```javascript
+  function searchLike(keyToFilter, searchableItem){
+    return _.filter(results, function(d){ return d[keyToFilter].startsWith(searchableItem); })
+  }
+
+  searchLike("name", "ra");
+
+  [{
+    "id": "203",
+    "name": "rana khan"
+  },
+  {
+    "id": "205",
+    "name": "ranbir kapoor"
+  }]
+```
