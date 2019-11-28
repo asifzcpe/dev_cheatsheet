@@ -1,5 +1,5 @@
 # Search as sql 'LIKE' statement into json using underscore.js
-```javascript
+```php
   function searchLike(keyToFilter, searchableItem){
     return _.filter(results, function(d){ return d[keyToFilter].startsWith(searchableItem); })
   }
