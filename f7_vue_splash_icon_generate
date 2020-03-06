@@ -1,3 +1,4 @@
 At first we have correct the project path of "cwd" in package.json file.
 Then we have to run "framework7 generate-assets --ui" command to get a UI to upload required images with specific size (4 images mainly).
 Then click generate. it will generate all the required Splash & Icon and automatically put them where splash/icon should stay.
+....
