@@ -3,31 +3,31 @@
 
 ```js
 <trmplate>
-<multiselect v-model="selectedObjects"
-    :options="options"
-    :multiple="true" 
-    label="name" 
-    track-by="id">
-</multiselect>
+    <multiselect v-model="selectedObjects"
+        :options="options"
+        :multiple="true" 
+        label="name" 
+        track-by="id">
+    </multiselect>
 </template>
 <script>
-export default {
-  data() {
-    return {
-      options: [
-        {id: 1, name: 'Ashraf'},
-        {id: 2, name: 'Imrul'},
-        {id: 3, name: 'Razib'},
-      ],
-      selectedObjects: [],
-      selectedIds: [],
+    export default {
+      data() {
+        return {
+          options: [
+            {id: 1, name: 'Ashraf'},
+            {id: 2, name: 'Imrul'},
+            {id: 3, name: 'Razib'},
+          ],
+          selectedObjects: [],
+          selectedIds: [],
+        }
+      },
+      watch: {
+        selectedObjects(newValues) {
+          this.selectedIds = newValues.map(obj => obj.id);
+        }
+      }
     }
-  },
-  watch: {
-    selectedObjects(newValues) {
-      this.selectedIds = newValues.map(obj => obj.id);
-    }
-  }
-}
 </script>
 ```
