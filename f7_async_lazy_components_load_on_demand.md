@@ -1,5 +1,5 @@
-#Async Lazy Components
-##With Webpack it is possible to load page components on demand, it is possible with F7's async route, for example:
+# Async Lazy Components
+## With Webpack it is possible to load page components on demand, it is possible with F7's async route, for example:
 
 ```js
 {
