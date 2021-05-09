@@ -3,7 +3,7 @@
 3. sudo cordova platform add ios@5.1.0
 4. from cordova directory: cd platforms/ios and give the read/write permission for current user in ios folder
 5. pod install
-6. from cordova directory: sudo cordova plugin phonegap-plugin-push --verbose It may show a message *Failed to install 'phonegap-plugin-push': undefined* . Just ignore it.
+6. from cordova directory: sudo cordova plugin add phonegap-plugin-push --verbose It may show a message *Failed to install 'phonegap-plugin-push': undefined* . Just ignore it.
 7. repeat step 4
 8. in 'cordova/platforms/ios/Pods/Target Support Files/Pods-YOUR_APP_NAME/' there will be two files named 'Pods-YOUR_APP_NAME-debug.xconfig' and 'Pods-YOUR_APP_NAME-release.xconfig'. Copy their content separately. Then go to ios folder again and paste the content accordingly in 'pods-debug.xconfig' and 'pods-release.xconfig'
 9. in cordova directory: open the GoogleService-info.plist file and change the *is_gcm_enabled* to false
